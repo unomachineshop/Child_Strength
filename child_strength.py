@@ -29,7 +29,7 @@ RED = (255, 0, 0)
 
 ### RPi.GPIO ###
 # Physical pin number
-PIN = 2
+PIN = 22
 
 # Define board layout
 gpio.setmode(gpio.BCM)
@@ -39,11 +39,12 @@ gpio.setup(PIN, gpio.IN)
 
 # Write data to specified file
 def write_to_file(data):
-    with open("./data.txt", "a") as f:
+    with open("/home/pi/Child_Strength/data.txt", "a") as f:
         f.write(data)
 
 # Control loop
 while running:
+    
     ### Logic ###
     active_sensor = ""
 
@@ -53,7 +54,6 @@ while running:
         #write_to_file("datadata\n")
 
     ### Drawing ###
-
     # Screen Clear
     screen.fill(BLACK)
 
