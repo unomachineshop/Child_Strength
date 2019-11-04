@@ -1,0 +1,101 @@
+import RPi.GPIO as GPIO
+import statistics
+import time
+from hx711 import HX711
+
+#For this to tun you will need the HX711 library
+#You can get this by typing "pip3 install HX711" into your pi's terminal
+
+#lets us know if anything is up with the gpio, if the code encounters an error and gpio isn't cleaned it may screech at you
+GPIO.setwarnings(True)
+
+#these are the GPIO pins that serve as input, not the same as the pin number gpio number is different
+#these are pins 29 and 31 on the pi
+#the DAT pin goes to the first spot and the CLK pin goes to the second
+hx= HX711(5,6)
+
+
+#function for finding the average of a list or array
+#returns an integer
+def Avg(R):
+    avg = 0  
+    for x in range(len(R)):
+        avg = avg + (R[x]/len(R))
+        
+    return avg
+
+
+#this cleans the input from the load cell
+#the load cell will occasionally give random readings, these need to be filtered out
+#the function works by finding all indices that deviate from the mean by more than the standard deviation and removing them
+#1 standard deviation was chosen arbitrarily, feel free to change
+#returns a list
+def Clean(Q):
+    
+    avg = Avg(Q)
+        
+    StDev= statistics.stdev(Q)
+    #print(StDev)
+    
+    Samples = list( filter(lambda y: abs(y - avg) < StDev, Q))
+    
+    return Samples
+
+#taring is required so that the load cell can be used to measure force
+#the load cell does not read zero when no weight is put on it so it must be tared before use
+#the no weight reading also doesn't appear to be super consistent which is why it must be tared often
+#taring is done by taking readings over a certain period, the length, and then finding the average
+#the zero force reading is then used later in the program
+def Tare(Length):
+    print('Taring...') #lets the user know what's going on
+    
+    RawSamples = []
+    for x in range(Length*2):
+        RawSamples.extend( hx.get_raw_data(5))
+        #print('tare ' + str(x) +': ')
+        #print(RawSamples)
+        time.sleep(.5)
+    
+    Samples = Clean(RawSamples)
+    
+    SampleAVG = Avg(Samples)
+    
+    return SampleAVG
+
+
+
+
+Tare = Tare(3)
+print(Tare)
+print('Done Taring, place object on load cell in next 4 sec')
+time.sleep(6)
+
+#20 readings are taken from the load cell
+SampleNum = 30
+RawSamples = hx.get_raw_data(SampleNum) #this methodactually gets the data, using the HX711 library
+print(RawSamples)
+
+
+#2 of the standard deviation cleaning steps are applied to reduce noise
+Samples = Clean(RawSamples)
+CleanerSamples = Clean(Samples)
+
+print(Samples)
+
+#the average of the cleaned samples is taken
+SampleAVG = Avg(CleanerSamples)
+
+
+print(SampleAVG)
+
+#this is where the actual weight is calculated
+#18.9 is a temporary conversion factor to convert from the load cell reading number to a weight in grams
+#this conversion factor is close, but not super accurate. It needs to be calibrated precisely
+print('mass in grams: ' + str((SampleAVG-Tare)/18.9))
+
+
+
+
+      
+
+GPIO.cleanup()
