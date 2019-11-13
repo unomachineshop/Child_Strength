@@ -1,43 +1,131 @@
-2019,1113,13,30,23 Gripping:0 Pulling:1
-2019,1113,13,30,23 Gripping:0 Pulling:1
-2019,1113,13,30,23 Gripping:0 Pulling:1
-2019,1113,13,30,23 Gripping:0 Pulling:1
-2019,1113,13,30,23 Gripping:0 Pulling:1
-2019,1113,13,30,23 Gripping:0 Pulling:1
-2019,1113,13,30,23 Gripping:0 Pulling:1
-2019,1113,13,30,23 Gripping:0 Pulling:1
-2019,1113,13,30,23 Gripping:0 Pulling:1
-2019,1113,13,30,23 Gripping:0 Pulling:1
-2019,1113,13,30,23 Gripping:0 Pulling:1
-2019,1113,13,30,23 Gripping:0 Pulling:1
-2019,1113,13,30,23 Gripping:0 Pulling:1
-2019,1113,13,30,23 Gripping:0 Pulling:1
-2019,1113,13,30,23 Gripping:0 Pulling:1
-2019,1113,13,30,23 Gripping:0 Pulling:1
-2019,1113,13,30,23 Gripping:0 Pulling:1
-2019,1113,13,30,23 Gripping:0 Pulling:1
-2019,1113,13,30,23 Gripping:0 Pulling:1
-2019,1113,13,30,23 Gripping:0 Pulling:1
-2019,1113,13,30,23 Gripping:0 Pulling:1
-2019,1113,13,30,24 Gripping:0 Pulling:1
-2019,1113,13,30,24 Gripping:0 Pulling:1
-2019,1113,13,30,24 Gripping:0 Pulling:1
-2019,1113,13,30,24 Gripping:0 Pulling:1
-2019,1113,13,30,24 Gripping:0 Pulling:1
-2019,1113,13,30,24 Gripping:0 Pulling:1
-2019,1113,13,30,24 Gripping:0 Pulling:1
-2019,1113,13,30,24 Gripping:0 Pulling:1
-2019,1113,13,30,24 Gripping:0 Pulling:1
-2019,1113,13,30,24 Gripping:0 Pulling:1
-2019,1113,13,30,24 Gripping:0 Pulling:1
-2019,1113,13,30,24 Gripping:0 Pulling:1
-2019,1113,13,30,24 Gripping:0 Pulling:1
-2019,1113,13,30,24 Gripping:0 Pulling:1
-2019,1113,13,30,24 Gripping:0 Pulling:1
-2019,1113,13,30,24 Gripping:0 Pulling:1
-2019,1113,13,30,24 Gripping:0 Pulling:1
-2019,1113,13,30,24 Gripping:0 Pulling:1
-2019,1113,13,30,24 Gripping:0 Pulling:1
-2019,1113,13,30,24 Gripping:0 Pulling:1
-2019,1113,13,30,24 Gripping:0 Pulling:1
-2019,1113,13,30,24 Gripping:0 Pulling:1
+2019,11,13,14,42,54, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,54, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,54, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,54, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,54, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,54, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,54, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,54, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,54, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,54, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,54, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,54, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,54, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,54, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,54, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,54, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,54, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,54, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,54, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,54, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,54, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,54, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,54, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,54, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,54, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,54, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,54, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,54, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,54, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,54, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,54, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,54, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,54, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,54, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,54, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,54, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,54, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,54, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,55, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,55, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,55, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,55, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,55, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,55, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,55, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,55, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,55, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,55, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,55, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,55, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,55, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,55, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,55, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,55, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,55, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,55, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,55, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,55, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,55, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,55, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,55, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,55, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,55, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,55, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,55, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,55, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,55, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,55, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,55, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,55, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,55, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,55, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,55, Grip:0, Pull:1, Flip:1
+2019,11,13,14,42,55, Grip:0, Pull:1, Flip:1
+2019,11,13,14,44,11, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,11, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,11, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,11, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,11, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,11, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,11, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,11, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,11, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,11, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,11, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,11, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,11, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,11, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,11, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,11, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,11, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,11, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,11, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,11, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,11, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,11, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,11, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,11, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,11, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,11, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,11, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,11, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,11, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,11, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,11, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,11, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,11, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,11, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,12, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,12, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,12, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,12, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,12, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,12, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,12, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,12, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,12, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,12, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,12, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,12, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,12, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,12, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,12, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,12, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,12, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,12, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,12, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,12, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,12, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,12, Grip:0, Pull:1, Flip:0
+2019,11,13,14,44,12, Grip:0, Pull:1, Flip:0

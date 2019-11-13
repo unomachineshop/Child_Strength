@@ -2,6 +2,7 @@ import pygame
 import pyautogui
 import RPi.GPIO as gpio
 from datetime import datetime
+from pin import Pin
 
 ### PyGame ####
 # Control loop
@@ -29,16 +30,16 @@ BLACK = (0, 0 , 0)
 RED = (255, 0, 0)
 
 ### RPi.GPIO ###
-# Physical pin numbers
-GRIP = 1
-PULL = 2
-
 # Define board layout
 gpio.setmode(gpio.BCM)
 
-# Define pin as input
-gpio.setup(GRIP, gpio.IN)
-gpio.setup(PULL, gpio.IN)
+# Define pins
+# Pin(number, name, pullup/down)
+pins = [
+        Pin(1, "Grip", False),
+        Pin(2, "Pull", False),
+        Pin(4, "Flip", True)
+        ]
 
 # Write data to specified file
 def write_to_file(data):
@@ -46,39 +47,40 @@ def write_to_file(data):
         f.write(data)
 
 # Control loop
+flip = False
 while running:
     
     ### Logic ###
+    # Default values
     active_sensor = ""
     sensor_value = "0"
 
-    # Data to send to file
-    ll = datetime.now().strftime("%Y,%m%d,%H,%M,%S")
+    # Find active pins
+    for pin in pins:
+        pin.read_data()
+        if pin.value > 0:
+            active_sensor = pin.name
+            sensor_value = str(pin.value)
 
-    # Checking Gpio pins
-    if gpio.input(GRIP):
-        active_sensor = "Gripping"
-        sensor_value = str(gpio.input(GRIP))
-        ll += " " + active_sensor + ":" + sensor_value
-    else:
-        active_sensor = "Gripping"
-        ll += " " + active_sensor + ":" + sensor_value
+        # Flip screen 180 degrees
+        if pin.name == "Flip" and pin.value > 0 and flip == False:
+            flip = True
 
-    if gpio.input(PULL):
-        active_sensor = "Pulling"
-        sensor_value = str(gpio.input(PULL))
-        ll += " " + active_sensor + ":" + sensor_value
-    else:
-        active_sensor = "Pulling"
-        ll += " " + active_sensor + ":" + sensor_value
+        if pin.name == "Flip" and pin.value > 0 and flip == True:
+            flip = False
 
+    # Log file entry
+    ll = datetime.now().strftime("%Y,%m,%d,%H,%M,%S")
+    for pin in pins:
+        ll += ", " + pin.name + ":" + str(pin.value)
+    
     ll += "\n"
     write_to_file(ll)
 
     ### Drawing ###
     # Screen Clear
     screen.fill(BLACK)
-
+    
     # Active Sensor String
     sensor_text = large_font.render(active_sensor, False, WHITE)
     screen.blit(sensor_text, ((DISPLAY_WIDTH / 2) - (sensor_text.get_rect().width / 2), (DISPLAY_HEIGHT / 2 - 100) - (sensor_text.get_rect().height / 2)))
@@ -94,6 +96,11 @@ while running:
     exit_text_rect.center = exit_rect.center
     screen.blit(exit_text, exit_text_rect)
 
+    
+    # Flip screen 180 degrees if button is pressed
+    if flip:
+        screen.blit(pygame.transform.rotate(screen, 180), (0,0))
+    
     ### Event System ###
     for event in pygame.event.get():
 
