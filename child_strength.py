@@ -1,6 +1,7 @@
 import pygame
 import pyautogui
 import RPi.GPIO as gpio
+from datetime import datetime
 
 ### PyGame ####
 # Control loop
@@ -28,14 +29,16 @@ BLACK = (0, 0 , 0)
 RED = (255, 0, 0)
 
 ### RPi.GPIO ###
-# Physical pin number
-PIN = 22
+# Physical pin numbers
+GRIP = 1
+PULL = 2
 
 # Define board layout
 gpio.setmode(gpio.BCM)
 
 # Define pin as input
-gpio.setup(PIN, gpio.IN)
+gpio.setup(GRIP, gpio.IN)
+gpio.setup(PULL, gpio.IN)
 
 # Write data to specified file
 def write_to_file(data):
@@ -47,20 +50,43 @@ while running:
     
     ### Logic ###
     active_sensor = ""
+    sensor_value = "0"
+
+    # Data to send to file
+    ll = datetime.now().strftime("%Y,%m%d,%H,%M,%S")
 
     # Checking Gpio pins
-    if gpio.input(PIN):
-        active_sensor = "Sensor X"
-        #write_to_file("datadata\n")
+    if gpio.input(GRIP):
+        active_sensor = "Gripping"
+        sensor_value = str(gpio.input(GRIP))
+        ll += " " + active_sensor + ":" + sensor_value
+    else:
+        active_sensor = "Gripping"
+        ll += " " + active_sensor + ":" + sensor_value
+
+    if gpio.input(PULL):
+        active_sensor = "Pulling"
+        sensor_value = str(gpio.input(PULL))
+        ll += " " + active_sensor + ":" + sensor_value
+    else:
+        active_sensor = "Pulling"
+        ll += " " + active_sensor + ":" + sensor_value
+
+    ll += "\n"
+    write_to_file(ll)
 
     ### Drawing ###
     # Screen Clear
     screen.fill(BLACK)
 
-    # Sensor String
+    # Active Sensor String
     sensor_text = large_font.render(active_sensor, False, WHITE)
-    screen.blit(sensor_text, ((DISPLAY_WIDTH / 2) - (sensor_text.get_rect().width / 2), (DISPLAY_HEIGHT / 2) - (sensor_text.get_rect().height / 2)))
+    screen.blit(sensor_text, ((DISPLAY_WIDTH / 2) - (sensor_text.get_rect().width / 2), (DISPLAY_HEIGHT / 2 - 100) - (sensor_text.get_rect().height / 2)))
 
+    # Sensor Value String
+    value_text = large_font.render(sensor_value, False, WHITE)
+    screen.blit(value_text, ((DISPLAY_WIDTH / 2) - (value_text.get_rect().width), (DISPLAY_HEIGHT / 2 + 50) - (value_text.get_rect().height / 2)))
+    
     # Exit Button
     exit_rect = pygame.draw.rect(screen, RED, (DISPLAY_WIDTH - 22, 2, 20, 20))
     exit_text = small_font.render("X", True, WHITE)
